@@ -1,5 +1,5 @@
 # Notes
-A notes app supporting markdown and syntax highlighting. Notes are being saved to Local Storage.
+A notes app supports Markdown and syntax highlighting. Notes are being saved to Local Storage.
 
 # Libraries
 - Marked
