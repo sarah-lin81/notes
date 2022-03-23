@@ -1,3 +1,14 @@
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  highlight: function(code, lang) {
+    const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+    return hljs.highlight(code, { language }).value;
+  },
+  langPrefix: 'hljs language-',
+  gfm: true,
+  breaks: true
+});
+
 const notes = JSON.parse(localStorage.getItem("notes"))
 
 if (notes) {
